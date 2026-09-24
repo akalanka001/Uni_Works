@@ -1,0 +1,133 @@
+drop database if exists IInstitute;
+create database if not exists IInstitute;
+
+USE IInstitute;
+
+-- Create Students table
+CREATE TABLE Students (
+    StudentID INT AUTO_INCREMENT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Gender VARCHAR(10),  -- changed from ENUM to VARCHAR
+    DOB DATE,
+    Email VARCHAR(100) UNIQUE,
+    Phone VARCHAR(15)
+);
+
+-- Create Courses table
+CREATE TABLE Courses (
+    CourseID INT AUTO_INCREMENT PRIMARY KEY,
+    CourseName VARCHAR(100),
+    DurationMonths INT,
+    Fee DECIMAL(10,2)
+);
+
+-- Create Enrollments table
+CREATE TABLE Enrollments (
+    EnrollmentID INT AUTO_INCREMENT PRIMARY KEY,
+    StudentID INT,
+    CourseID INT,
+    EnrollmentDate DATE,
+    FOREIGN KEY (StudentID) REFERENCES Students(StudentID),
+    FOREIGN KEY (CourseID) REFERENCES Courses(CourseID)
+);
+
+-- Insert sample students
+INSERT INTO Students (FirstName, LastName, Gender, DOB, Email, Phone)
+VALUES
+('Kamal', 'Perera', 'Male', '2000-05-15', 'kamal@example.com', '0711234567'),
+('Nadeesha', 'Silva', 'Female', '1999-11-20', 'nadeesha@example.com', '0777654321'),
+('Amal', 'Fernando', 'Male', '2001-02-10', 'amal@example.com', '0723456789'),
+('Sajini', 'Wijesinghe', 'Female', '2002-07-25', 'sajini@example.com', '0749876543'),
+('Ruwan', 'Jayasinghe', 'Male', '2000-09-05', 'ruwan@example.com', '0701239876');
+
+-- Insert sample courses
+INSERT INTO Courses (CourseName, DurationMonths, Fee)
+VALUES
+('Diploma in Software Engineering', 12, 120000.00),
+('Certificate in Web Development', 6, 60000.00),
+('Advanced Networking', 8, 80000.00),
+('Database Management Systems', 5, 50000.00),
+('Cybersecurity Essentials', 7, 75000.00);
+
+-- Insert sample enrollments
+INSERT INTO Enrollments (StudentID, CourseID, EnrollmentDate)
+VALUES
+(1, 1, '2025-01-10'),
+(2, 2, '2025-02-05'),
+(3, 3, '2025-02-15'),
+(4, 4, '2025-03-01'),
+(5, 5, '2025-03-10'),
+(1, 2, '2025-01-20'),
+(2, 3, '2025-02-20'),
+(3, 4, '2025-03-01'),
+(4, 5, '2025-03-10'),
+(5, 5, '2025-03-15');
+
+
+create view StudentCourseDetails as
+select 
+	concat(s.FirstName,' ',  s.LastName) as Fullname,
+	c.courseName,
+	c.Fee,
+	e.EnrollmentDate
+from students s
+join enrollments e on s.StudentID = e.StudentID
+join courses c on e.CourseID = c.CourseID;
+
+DELIMITER //
+CREATE FUNCTION GetStudentCourseCount(p_StudentID INT)
+RETURNS INT
+DETERMINISTIC
+READS SQL DATA
+BEGIN
+    DECLARE course_count INT;
+
+    SELECT COUNT(*)
+    INTO course_count
+    FROM enrollments
+    WHERE StudentID = p_StudentID;
+
+    RETURN course_count;
+END //
+DELIMITER ;
+select getstudentcoursecount(2);
+
+DELIMITER //
+
+CREATE PROCEDURE GetStudentCourses(IN p_StudentID INT)
+BEGIN
+    SELECT
+        CONCAT(s.FirstName, ' ', s.LastName) AS StudentFullName,
+        c.CourseName,
+        c.DurationMonths AS CourseDuration,
+        c.Fee AS CourseFee,
+        e.EnrollmentDate
+    FROM students s
+    JOIN enrollments e ON s.StudentID = e.StudentID
+    JOIN courses c ON e.CourseID = c.CourseID
+    WHERE s.StudentID = p_StudentID;
+END //
+
+DELIMITER ;
+
+CALL GetStudentCourses(3);
+
+
+
+
+DELIMITER //
+
+CREATE PROCEDURE GetCourseEnrollmentCount(
+    IN p_CourseID INT,
+    OUT p_TotalStudents INT
+)
+BEGIN
+    SELECT COUNT(*)
+    INTO p_TotalStudents
+    FROM enrollments
+    WHERE CourseID = p_CourseID;
+END //
+
+DELIMITER ;
+CALL GetCourseEnrollmentCount(4, @TotalStudents);
