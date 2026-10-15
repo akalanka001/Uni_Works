@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="XCoyJvsajDp-tHT4pJ1l">
-    <mxGraphModel dx="1478" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3543" dy="2204" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -258,6 +258,27 @@
         </mxCell>
         <mxCell id="dM563j7t80o3CCWEgaX8-69" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Fulfillment_status" vertex="1">
           <mxGeometry height="50" width="115" x="1330" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Request_fulfillment" vertex="1">
+          <mxGeometry height="40" width="115" x="630" y="1510" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-71" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Notification_id" vertex="1">
+          <mxGeometry height="50" width="100" x="450" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-72" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Donor_id" vertex="1">
+          <mxGeometry height="50" width="100" x="500" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-73" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Request_id" vertex="1">
+          <mxGeometry height="50" width="100" x="610" y="1410" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-74" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Message" vertex="1">
+          <mxGeometry height="50" width="100" x="720" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-75" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Notification_status" vertex="1">
+          <mxGeometry height="50" width="115" x="790" y="1480" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-76" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Sent_at" vertex="1">
+          <mxGeometry height="50" width="100" x="790" y="1550" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
