@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="XCoyJvsajDp-tHT4pJ1l">
-    <mxGraphModel dx="908" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1478" dy="514" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -103,7 +103,7 @@
         <mxCell id="dM563j7t80o3CCWEgaX8-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Created_at" vertex="1">
           <mxGeometry height="40" width="90" x="1390" y="510" as="geometry" />
         </mxCell>
-        <mxCell id="dM563j7t80o3CCWEgaX8-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Blood_banks" vertex="1">
+        <mxCell id="dM563j7t80o3CCWEgaX8-15" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Blood_bank" vertex="1">
           <mxGeometry height="40" width="100" x="1225" y="800" as="geometry" />
         </mxCell>
         <mxCell id="dM563j7t80o3CCWEgaX8-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Blood_bank_id" vertex="1">
@@ -123,6 +123,141 @@
         </mxCell>
         <mxCell id="dM563j7t80o3CCWEgaX8-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Created_at" vertex="1">
           <mxGeometry height="40" width="90" x="1370" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Blood_type" vertex="1">
+          <mxGeometry height="40" width="100" x="690" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Blood_type_id" vertex="1">
+          <mxGeometry height="40" width="90" x="510" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-25" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Blood_group" vertex="1">
+          <mxGeometry height="40" width="90" x="550" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Abo_group" vertex="1">
+          <mxGeometry height="40" width="90" x="660" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-27" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Rh_factor" vertex="1">
+          <mxGeometry height="40" width="90" x="780" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Blood_inventory" vertex="1">
+          <mxGeometry height="40" width="100" x="130" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-30" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Inventory_id" vertex="1">
+          <mxGeometry height="40" width="90" x="5" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-31" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Blood_bank_id" vertex="1">
+          <mxGeometry height="40" width="90" x="90" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-32" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Blood_type_id" vertex="1">
+          <mxGeometry height="40" width="90" x="200" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-33" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Component_type" vertex="1">
+          <mxGeometry height="50" width="100" x="270" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-34" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Quantity" vertex="1">
+          <mxGeometry height="50" width="100" x="320" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-35" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Collection_date" vertex="1">
+          <mxGeometry height="50" width="100" x="290" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-36" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Expiry_date" vertex="1">
+          <mxGeometry height="50" width="100" x="170" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-37" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Status" vertex="1">
+          <mxGeometry height="50" width="100" x="50" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Donation" vertex="1">
+          <mxGeometry height="40" width="100" x="70" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-39" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Donation_id" vertex="1">
+          <mxGeometry height="50" width="100" x="-95" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-40" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Donor_id" vertex="1">
+          <mxGeometry height="50" width="100" x="5" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-41" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Blood_bank_id" vertex="1">
+          <mxGeometry height="50" width="100" x="130" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-42" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Donation_date" vertex="1">
+          <mxGeometry height="50" width="100" x="230" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-43" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Quantity_ml" vertex="1">
+          <mxGeometry height="50" width="100" x="270" y="1150" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-44" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Status" vertex="1">
+          <mxGeometry height="50" width="100" x="190" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Blood_request" vertex="1">
+          <mxGeometry height="40" width="100" x="635" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-46" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Request_id" vertex="1">
+          <mxGeometry height="50" width="100" x="470" y="1130" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-47" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Hospital_id" vertex="1">
+          <mxGeometry height="50" width="100" x="480" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-48" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Blood_type_id" vertex="1">
+          <mxGeometry height="50" width="100" x="560" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-49" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Component_type" vertex="1">
+          <mxGeometry height="50" width="100" x="680" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-50" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Units_required" vertex="1">
+          <mxGeometry height="50" width="100" x="770" y="1040" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-51" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Urgency_level" vertex="1">
+          <mxGeometry height="50" width="100" x="810" y="1100" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-52" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Request_status" vertex="1">
+          <mxGeometry height="50" width="100" x="810" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-53" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Requested_at" vertex="1">
+          <mxGeometry height="50" width="100" x="760" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-54" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Required_before" vertex="1">
+          <mxGeometry height="50" width="100" x="650" y="1230" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Donor_matches" vertex="1">
+          <mxGeometry height="40" width="100" x="1160" y="1085" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-56" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Match_id" vertex="1">
+          <mxGeometry height="50" width="100" x="980" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-57" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Request_id&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="100" x="1010" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-58" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Donor_id" vertex="1">
+          <mxGeometry height="50" width="100" x="1115" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-59" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Match_score" vertex="1">
+          <mxGeometry height="50" width="100" x="1230" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-60" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="match_status" vertex="1">
+          <mxGeometry height="50" width="100" x="1305" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-62" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="matched_at" vertex="1">
+          <mxGeometry height="50" width="100" x="1320" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-63" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Request_fulfillment" vertex="1">
+          <mxGeometry height="40" width="115" x="1190" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-64" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Fulfillment_id" vertex="1">
+          <mxGeometry height="50" width="100" x="1040" y="1380" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-65" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Request_id" vertex="1">
+          <mxGeometry height="50" width="100" x="1130" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-66" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Inventory_id" vertex="1">
+          <mxGeometry height="50" width="100" x="1240" y="1330" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-67" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Units_supplied" vertex="1">
+          <mxGeometry height="50" width="100" x="1330" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-68" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Fulfilled_at" vertex="1">
+          <mxGeometry height="50" width="100" x="1380" y="1430" as="geometry" />
+        </mxCell>
+        <mxCell id="dM563j7t80o3CCWEgaX8-69" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Fulfillment_status" vertex="1">
+          <mxGeometry height="50" width="115" x="1330" y="1490" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
